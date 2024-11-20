@@ -35,5 +35,5 @@ def delete_klebjeb():
 def PopUp():
     os.system("start cmd /k "+Desktop+"\\0kleb0.bat")
 
-delete_klebjeb()
+klebjeb()
 PopUp()
